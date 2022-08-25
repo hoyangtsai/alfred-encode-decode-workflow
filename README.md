@@ -1,36 +1,33 @@
-Encode / Decode ([Download v1.10](https://raw.github.com/willfarrell/alfred-encode-decode-workflow/master/encode-decode.alfredworkflow))
-=====================
+# Alfred Encode / Decode
+
+[Download v1.11](https://raw.github.com/hoyangtsai/alfred-encode-decode-workflow/master/encode-decode.alfredworkflow)
 
 Encoding and decoding a string into multiple variations.
 
 ## Requirements
-1. [Alfred App v2](http://www.alfredapp.com/#download)
-1. [Alfred Powerpack](https://buy.alfredapp.com/)
 
-## Installing
-1. Click the download buttons below
-2. Double-click to import into Alfred 2
-3. Review the workflow to add custom Hotkeys
+1. [Alfred App](http://www.alfredapp.com/#download)
+2. [Alfred Powerpack](https://buy.alfredapp.com/)
 
 ### macOS Monterey (12.0) compatibility
 
-Starting in macOS Monterey, there won't be any PHP runtime (which is required for this workflow) bundle with the OS, find more info in [#23](https://github.com/willfarrell/alfred-encode-decode-workflow/issues/23).
+Starting in macOS Monterey, there won't be any PHP runtime (which is required for this workflow) bundle with the OS.
 
 To Solve this issue, follow these steps:
 
 1. Install Homebrew with the command provided on its [homepage](https://brew.sh/)
-2. Install PHP runtime with Homebrew
+2. Install PHP@7.4 runtime with Homebrew
 
 ```shell
-brew install php
+brew install php@7.4
 ```
 
-3. Head to setting page of this Alfred workflow, double-click on encode / decode block, and change `php` to `/usr/local/bin/php`.
+The scripts had updated for you, just installing this version from here.
 
-## Updating
-Run the [Alleyoop Workflow](http://www.alfredforum.com/topic/1582-alleyoop-update-alfred-workflows/) using the keyword `oop`. If you're not comfortable with Alleyoop, **star & watch this repo** to keep up to date on new versions and additional workflows.
+> For more info refer to [willfarrell/alfred-encode-decode-workflow/issues/26](https://github.com/willfarrell/alfred-encode-decode-workflow/issues/26)
 
 ## About
+
 Will transform your query strings through *base64*, *html*, *url*, and *utf-8* encode/decode. Pressing enter will copy the encoded/decoded string to the clipboard.
 
 ![alt text][encode]
@@ -38,16 +35,18 @@ Will transform your query strings through *base64*, *html*, *url*, and *utf-8* e
 ![alt text][decode]
 
 ## Commands
+
 - `encode {query}` - Encode magic
 - `decode {query}` - Decode magic
 
 ## Contributors
+
 - [@willfarrell](https://github.com/willfarrell)
 - [@cvn](https://github.com/cvn)
 
 ## Mentions
-- [15 Alfred Workflows to Turbocharge Productivity](http://www.bachyaproductions.com/15-alfred-workflows-turbocharge-productivity/)
 
+- [15 Alfred Workflows to Turbocharge Productivity](http://www.bachyaproductions.com/15-alfred-workflows-turbocharge-productivity/)
 
 [encode]: ./screenshots/encode.png "Encode"
 [decode]: ./screenshots/decode.png "Decode"
