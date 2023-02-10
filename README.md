@@ -21,6 +21,12 @@ To Solve this issue, follow these steps:
 ```shell
 brew install php@7.4
 ```
+ Note: If you've installed php with homebrew previously, you also need to
+ 
+ ```shell
+ brew unlink php
+ brew link php@7.4
+ ```
 
 The scripts had updated for you, just installing this version from here.
 
