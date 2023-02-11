@@ -21,12 +21,29 @@ To Solve this issue, follow these steps:
 ```shell
 brew install php@7.4
 ```
- Note: If you've installed php with homebrew previously, you also need to
+
+If seeing this error
+
+```sh
+Error: php@7.4 has been disabled because it is a versioned formula!
+```
+
+Use another source to install php@7.4
+
+```sh
+brew tap shivammathur/php
+brew install shivammathur/php/php@7.4
+```
+
+More info: [Homebrew/homebrew-core #120854](https://github.com/Homebrew/homebrew-core/issues/120854)
+
+
+Note: If you've installed php with homebrew previously, you also need to
  
- ```shell
- brew unlink php
- brew link php@7.4
- ```
+```shell
+brew unlink php
+brew link php@7.4
+```
 
 The scripts had updated for you, just installing this version from here.
 
